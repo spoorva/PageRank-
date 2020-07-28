@@ -1,0 +1,8 @@
+ //sites.collectAsMap().forEach((key, value) -> System.out.println((key + ":" + value.edgeIterator().next())));
+            
+                //ranks.collectAsMap().forEach((key, value) -> System.out.println((key + ":" + value)));
+
+               //sites.groupByKey().collectAsMap().forEach((key, value) -> System.out.println("Key : " + key + " website : " + value + " outbound edges" + ":" + value.edgeIterator().next()));
+               // System.out.println(sites.groupByKey().collectAsMap());
+
+               sites.values().foreach(v -> System.out.println(v.getId() + " : " +v.getNEdges()));
